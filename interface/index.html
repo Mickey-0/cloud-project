@@ -3,48 +3,57 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Students</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Information</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
-    <script src="./main.js"></script>
+    <script src="main.js"></script>
+
 
 </head>
 
 <body>
-    <div class="bgAnimation" id="bgAnimation">
-        <div class="backgroundAmim"></div>
-    </div>
-    <div class="container">
-        <nav>
-            <h1><span>Students </span>Data</h1>
-            <ul>
-                <li>Home</li>
-                <li>Services</li>
-                <li>Our Team</li>
-                <li>Collaborate</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-
-        <section>
-            <table id="table" class="data-table">
+    <main class="table" id="students_table">
+        <section class="table__header">
+            <h1>Team Information </h1>
+            <div class="input-group">
+                <input type="search" placeholder="Search Data...">
+                <img src="search.png" alt="">
+            </div>
+            <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label>Export As &nbsp; &#10140;</label>
+                    <label for="export-file" id="toPDF">PDF <img src="pdf.png" alt=""></label>
+                    <label for="export-file" id="toJSON">JSON <img src="json.png" alt=""></label>
+                    <label for="export-file" id="toCSV">CSV <img src="csv.png" alt=""></label>
+                    <label for="export-file" id="toEXCEL">EXCEL <img src="excel.png" alt=""></label>
+                </div>
+            </div>
+            <div class="buttons-container">
+                <button class="add-button">Add Student</button>
+                <button class="delete-button">Delete Student</button>
+            </div>
+        </section>
+        <section class="table__body">
+            <table id="table">
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Student ID</th>
-                        <th>CGPA</th>
+                        <th> ID <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Student Name <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Age <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Student ID <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> CGPA <span class="icon-arrow">&UpArrow;</span></th>
                     </tr>
                 </thead>
                 <tbody>
                 </tbody>
             </table>
         </section>
-    </div>
-    <script src="./script.js"></script>
+    </main>
+    <script src="script.js"></script>
 </body>
 
 </html>

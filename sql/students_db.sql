@@ -20,8 +20,9 @@ CREATE TABLE IF NOT EXISTS `students` (
 );
 
 INSERT INTO `students` (`name`, `age`, `stID`, `cgpa`) VALUES
-('Abdelrhman Moataz', 21, 22010149, 3.2), -- Assuming cgpa is a decimal number with 2 decimal places
-('Belal Tarek', 20, 22011657, 4.00),
-('Suhaib Tharwat', 19, 22010123, 3.33),
-('Omar Abdelrazik', 20, 22010170, 3.4),
-('Yassin Salah', 19, 22010410, 2.6)
+('michael Mourad', 21, 22010206, 3.2), -- Assuming cgpa is a decimal number with 2 decimal places
+('menna ayman', 20, 22011461, 4.00),
+('asmaa hamdy', 19, 22011872, 3.33),
+('mazen mosaad', 20, 2201088, 3.4),
+('ibrahim abdelghany', 19, 22010010, 2.6),
+('mohammed shabaan', 19, 22010390, 3.6);

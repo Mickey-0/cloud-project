@@ -7,7 +7,7 @@ $.ajax({
     if (data) {
       console.log(data);
       for (let i = 0; i < data.length; i++) {
-        console.log(data[i].stID);
+        console.log(data[i]);
         $("#table tbody").append(
           "<tr><td>" +
           data[i].id +
